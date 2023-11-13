@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- *_strcmp - compare two strings
+ *_strcmp - A program that compare two strings
  *@first: first string to be compared
  *@second: second string to be compared
  *
@@ -22,7 +22,7 @@ int _strcmp(char *first, char *second)
 }
 
 /**
- *_strcat - concatenates two strings
+ *_strcat - A program that concatenates two strings
  *@destination: string to be concatenated to
  *@source:  string to concatenate
  *
@@ -43,7 +43,7 @@ char *_strcat(char *destination, char *source)
 }
 
 /**
- *_strspn - gets the length of a prefix substring
+ *_strspn - A program that gets the length of a prefix substring
  *@str1: string to be searched
  *@str2: string to be used
  *
@@ -66,7 +66,8 @@ int _strspn(char *str1, char *str2)
 }
 
 /**
- *_strcspn - computes segment of str1 which consists of characters not in str2
+ *_strcspn - A program that computes segment of str1 which
+ *consists of characters not in str2
  *@str1: string to be searched
  *@str2: string to be used
  *
@@ -89,7 +90,7 @@ int _strcspn(char *str1, char *str2)
 
 
 /**
- *_strchr - locates a char in a string
+ *_strchr - A program that locates a char in a string
  *@s: string to be searched
  *@c: char to be checked
  *
