@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * non_interactive - handles non_interactive mode
+ * non_interactive - A program that handles non_interactive mode
  *
- * Return: void
+ * Return:non_interactive mode
  */
 
 void non_interactive(void)

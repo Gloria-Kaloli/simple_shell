@@ -1,8 +1,7 @@
 #include "shell.h"
 
-
 /**
- *_strtok_r - tokenizes a string
+ *_strtok_r - A program that tokenizes a string
  *@string: string to be tokenized
  *@delim: delimiter to be used to tokenize the string
  *@save_ptr: pointer to be used to keep track of the next token
@@ -42,7 +41,7 @@ char *_strtok_r(char *string, char *delim, char **save_ptr)
 }
 
 /**
- * _atoi - changes a string to an integer
+ * _atoi - A program that changes a string to an integer
  * @s: the string to be changed
  *
  * Return: the converted int
@@ -65,7 +64,7 @@ int _atoi(char *s)
 }
 
 /**
- * _realloc - reallocates a memory block
+ * _realloc - A program tha reallocates a memory block
  * @ptr: pointer to the memory previously allocated with a call to malloc
  * @old_size: size of ptr
  * @new_size: size of the new memory to be allocated
@@ -106,7 +105,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 }
 
 /**
- * ctrl_c_handler - handles the signal raised by CTRL-C
+ * ctrl_c_handler - A program that handles the signal raised by CTRL-C
  * @signum: signal number
  *
  * Return: void
@@ -118,7 +117,7 @@ void ctrl_c_handler(int signum)
 }
 
 /**
- * remove_comment - removes/ignores everything after a '#' char
+ * remove_comment - A program that removes/ignores everything after '#' char
  * @input: input to be used
  *
  * Return: void
