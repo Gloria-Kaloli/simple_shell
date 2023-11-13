@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * tokenizer - tokenizes input and stores it into an array
+ * tokenizer - A program that tokenizes input and stores it into an array
  *@input_string: input to be parsed
  *@delim: delimiter to be used, needs to be one character string
  *
@@ -32,7 +32,7 @@ char **tokenizer(char *input_string, char *delim)
 }
 
 /**
- *print - prints a string to stdout
+ *print - A progrsm that prints a string to stdout
  *@string: string to be printed
  *@stream: stream to print out to
  *
@@ -47,7 +47,7 @@ void print(char *string, int stream)
 }
 
 /**
- *remove_newline - removes new line from a string
+ *remove_newline - A program that removes new line from a string
  *@str: string to be used
  *
  *
@@ -68,7 +68,7 @@ void remove_newline(char *str)
 }
 
 /**
- *_strcpy - copies a string to another buffer
+ *_strcpy - A program tht copies a string to another buffer
  *@source: source to copy from
  *@dest: destination to copy to
  *
@@ -85,7 +85,7 @@ void _strcpy(char *source, char *dest)
 }
 
 /**
- *_strlen - counts string length
+ *_strlen - A program that counts string length
  *@string: string to be counted
  *
  * Return: length of the string
