@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * parse_command - A program that determines the type of the command
- * @command: command to be parsed
+ * parse_command - Determines the type of the command
+ * @command: command to parse
  *
  * Return: constant representing the type of the command
  * Description -
@@ -40,7 +40,7 @@ int parse_command(char *command)
 }
 
 /**
- * execute_command - A program that executes a command based on it's type
+ * execute_command - Executes a command based on it's type
  * @tokenized_command: tokenized form of the command (ls -l == {ls, -l, NULL})
  * @command_type: type of the command
  *
@@ -83,8 +83,8 @@ void execute_command(char **tokenized_command, int command_type)
 }
 
 /**
- * check_path - A program that checks if a command is found in the PATH
- * @command: command to be used
+ * check_path - Checks if a command is found in the PATH
+ * @command: command to use
  *
  * Return: path where the command is found in, NULL if not found
  */
@@ -143,8 +143,8 @@ void (*get_func(char *command))(char **)
 }
 
 /**
- * _getenv - A program that gets the value of an environment variable
- * @name: name of the environment variable
+ * _getenv - Gets the value of an environment variable
+ * @name: name of the env variable
  *
  * Return: the value of the variable as a string
  */

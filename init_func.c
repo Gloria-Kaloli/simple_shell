@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * initializer - A program that starts executing everything
- * @current_command: try to check current token
- * @type_command: parse token
+ * initializer - A program that executes everything
+ * @current_command: checks current token
+ * @type_command: parses token
  *
  * Return: void function
  */

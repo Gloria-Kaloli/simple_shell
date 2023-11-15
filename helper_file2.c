@@ -1,16 +1,16 @@
 #include "shell.h"
 
 /**
- *_strtok_r - A program that tokenizes a string
- *@string: string to be tokenized
- *@delim: delimiter to be used to tokenize the string
- *@save_ptr: pointer to be used to keep track of the next token
+ *_strtok_r - Tokenizes a string
+ *@string: string to tokenize
+ *@delim: delimiter used to tokenize the string
+ *@save_ptr: pointer used to keep track of the next token
  *
- *Return: The next available token
+ *Return: The next free token
  */
 char *_strtok_r(char *string, char *delim, char **save_ptr)
 {
-	char *finish;
+	char *finis;
 
 	if (string == NULL)
 		string = *save_ptr;
@@ -28,21 +28,21 @@ char *_strtok_r(char *string, char *delim, char **save_ptr)
 		return (NULL);
 	}
 
-	finish = string + _strcspn(string, delim);
-	if (*finish == '\0')
+	finis = string + _strcspn(string, delim);
+	if (*finis == '\0')
 	{
-		*save_ptr = finish;
+		*save_ptr = finis;
 		return (string);
 	}
 
-	*finish = '\0';
-	*save_ptr = finish + 1;
+	*finis = '\0';
+	*save_ptr = finis + 1;
 	return (string);
 }
 
 /**
- * _atoi - A program that changes a string to an integer
- * @s: the string to be changed
+ * _atoi - Changes a string to an integer
+ * @s: the string to change
  *
  * Return: the converted int
  */
@@ -64,7 +64,7 @@ int _atoi(char *s)
 }
 
 /**
- * _realloc - A program tha reallocates a memory block
+ * _realloc - Reallocates a memory block
  * @ptr: pointer to the memory previously allocated with a call to malloc
  * @old_size: size of ptr
  * @new_size: size of the new memory to be allocated
@@ -117,7 +117,7 @@ void ctrl_c_handler(int signum)
 }
 
 /**
- * remove_comment - A program that removes/ignores everything after '#' char
+ * remove_comment - Ignores everything after '#' char
  * @input: input to be used
  *
  * Return: void

@@ -1,44 +1,44 @@
 #include "shell.h"
 
 /**
- *env - prints the current_environnement
- *@tokenized_command: command entered
+ *env - prints current_environ
+ *@tokenized_command: command inputed
  *
  *Return: void
  */
 
 void env(char **tokenized_command __attribute__((unused)))
 {
-	int i;
+	int j;
 
-	for (i = 0; environ[i] != NULL; i++)
+	for (j = 0; environ[j] != NULL; j++)
 	{
-		print(environ[i], STDOUT_FILENO);
+		print(environ[j], STDOUT_FILENO);
 		print("\n", STDOUT_FILENO);
 	}
 }
 
 /**
- * quit - exits the shell
- * @tokenized_command: command entered
+ * quit - leaves the shell
+ * @tokenized_command: command inputed
  *
  * Return: void
  */
 
 void quit(char **tokenized_command)
 {
-	int num_token = 0, arg;
+	int numb_token = 0, arg;
 
-	for (; tokenized_command[num_token] != NULL; num_token++)
+	for (; tokenized_command[numb_token] != NULL; numb_token++)
 		;
-	if (num_token == 1)
+	if (numb_token == 1)
 	{
 		free(tokenized_command);
 		free(line);
 		free(commands);
 		exit(status);
 	}
-	else if (num_token == 2)
+	else if (numb_token == 2)
 	{
 		arg = _atoi(tokenized_command[1]);
 		if (arg == -1)
